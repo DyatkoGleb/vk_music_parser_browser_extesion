@@ -1,0 +1,22 @@
+{
+    "name": "Парс ежедневных рекомендаций vk",
+    "description": "А ничо, нормально делай - нормально будет",
+    "version": "6.6.6",
+    "manifest_version": 3,
+    "content_scripts": [
+      {
+      "matches": ["https://vk.com/music/playlist/124128861_-21"],
+        "js": ["script.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_icon": {
+        "48": "/images/img.png"
+      }
+    },
+    "icons": {
+      "48": "/images/img.png"
+    }
+}
