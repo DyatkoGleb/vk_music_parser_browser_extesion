@@ -8,11 +8,11 @@ window.onload = function() {
         output[song.children[0].textContent] = song.children[1].textContent
     }
 
-    sendresults(output)
+    sendResults(output)
 }
 
 
-const sendresults = async (output) => {
+const sendResults = async (output) => {
     await fetch('http://localhost:1111', {
         method: 'POST',
         headers: {
